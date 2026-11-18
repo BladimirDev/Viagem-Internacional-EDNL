@@ -6,6 +6,7 @@
 using namespace std;
 
 const double INF = 1e9;
+const int N = 7;
 
 const int CWB = 0; // Curitiba
 const int MAD = 1; // Madri
@@ -15,7 +16,7 @@ const int LON = 4; // Londres
 const int ROM = 5; // Roma
 const int TYO = 6; // Toquio
 
-string nomes[7] = {"Curitiba", "Madri", "Lisboa", "Paris", "Londres", "Roma", "Toquio"};
+string nomes[N] = {"Curitiba", "Madri", "Lisboa", "Paris", "Londres", "Roma", "Toquio"};
 
 class GrafoMatriz {
 private:
