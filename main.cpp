@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <iomanip>
 using namespace std;
 
 const double INF = 1e9;
@@ -39,24 +40,20 @@ public:
         }
     }
 
-    void imprimir() 
-    {
-        cout << "\t";
-        for (int j = 0; j < numVertices; j++) 
-        {
-            cout << nomes[j] << "\t";
+    void imprimir() {
+        cout << setw(10) << " ";
+        for (int j = 0; j < numVertices; j++) {
+            cout << setw(10) << nomes[j];
         }
         cout << endl;
 
-        for (int i = 0; i < numVertices; i++) 
-        {
-            cout << nomes[i] << "\t";
-            for (int j = 0; j < numVertices; j++) 
-            {
+        for (int i = 0; i < numVertices; i++) {
+            cout << setw(10) << nomes[i];
+            for (int j = 0; j < numVertices; j++) {
                 if (matriz[i][j] == INF) {
-                    cout << "-" << "\t";
+                    cout << setw(10) << "-";
                 } else {
-                    cout << matriz[i][j] << "\t";
+                    cout << setw(10) << matriz[i][j];
                 }
             }
             cout << endl;
