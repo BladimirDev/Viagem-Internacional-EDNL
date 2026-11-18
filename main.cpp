@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include <iomanip>
+#include <queue>
 using namespace std;
 
 const double INF = 1e9;
